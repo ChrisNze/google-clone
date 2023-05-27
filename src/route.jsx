@@ -5,7 +5,7 @@ import MainPageMenu from "./pages/MainPageMenu";
 import AboutPage from "./pages/aboutPage/AboutPage";
 import DataAndPrivacy from "./pages/dataAndPrivacyPage/DataAndPrivacy";
 import ErrorPage from "./pages/errorPage/ErrorPage";
-import HomePage from "./pages/homePage/HomePage";
+import HomePageMain from "./pages/homePage/HomePageMain";
 import PaymentPage from "./pages/paymentAndSubscriptionPage/PaymentPage";
 import PersonalPage from "./pages/personalAndSharingPage/PersonalPage";
 import InfoPage from "./pages/personalInfoPage/InfoPage";
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
 				path: "/",
 				element: <MainPageMenu />,
 				children: [
-					{ path: "/", element: <HomePage /> },
+					{ path: "/", element: <HomePageMain /> },
 					{ path: "/aboutUs", element: <AboutPage /> },
 					{ path: "/payment", element: <PaymentPage /> },
 					{ path: "/personal-and-sharing", element: <PersonalPage /> },

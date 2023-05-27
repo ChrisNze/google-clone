@@ -8,7 +8,7 @@ import WelcomeNote from "../../components/WelcomeNote";
 import useZustand from "../../hooks/useZustand";
 import useHomeVariables from "./useHomeVariables";
 
-const HomePage = () => {
+const HomePageMain = () => {
 	const { message, info, imageSize, heading_1, heading_2, text, linkText, heading_1_2, heading_2_2, text_2, linkText_2 } = useHomeVariables();
 	const { smShow } = useZustand();
 	return (
@@ -38,4 +38,4 @@ const HomePage = () => {
 	);
 };
 
-export default HomePage;
+export default HomePageMain;
