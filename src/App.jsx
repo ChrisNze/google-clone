@@ -7,7 +7,7 @@ import { MdToggleOff } from "react-icons/md";
 import { Outlet } from "react-router-dom";
 import GoogleImg from "./components/GoogleImg";
 import ProfilePix from "./components/ProfilePix";
-import MainMenu from "./components/offCanvas";
+import MainMenu from "./components/MainMenu";
 import useZustand from "./hooks/useZustand";
 
 const App = () => {
