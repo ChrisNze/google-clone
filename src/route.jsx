@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
+import ModalPage from "./components/ModalPage";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import AboutPage from "./pages/aboutPage/AboutPage";
 import DataAndPrivacy from "./pages/dataAndPrivacyPage/DataAndPrivacy";
@@ -9,7 +10,6 @@ import PaymentPage from "./pages/paymentAndSubscriptionPage/PaymentPage";
 import PersonalPage from "./pages/personalAndSharingPage/PersonalPage";
 import InfoPage from "./pages/personalInfoPage/InfoPage";
 import SecurityPage from "./pages/securityPage/SecurityPage";
-import ModalPage from "./components/ModalPage";
 
 const router = createBrowserRouter([
 	{
