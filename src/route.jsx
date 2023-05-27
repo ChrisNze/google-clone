@@ -4,7 +4,7 @@ import ModalPage from "./components/ModalPage";
 import AboutPage from "./pages/aboutPage/AboutPage";
 import DataAndPrivacy from "./pages/dataAndPrivacyPage/DataAndPrivacy";
 import ErrorPage from "./pages/errorPage/ErrorPage";
-import HomePage from "./pages/homePage/HomePage";
+// import HomePage from "./pages/homePage/HomePage";
 import MainPage from "./pages/mainPage";
 import PaymentPage from "./pages/paymentAndSubscriptionPage/PaymentPage";
 import PersonalPage from "./pages/personalAndSharingPage/PersonalPage";
@@ -21,8 +21,8 @@ const router = createBrowserRouter([
 				path: "/",
 				element: <MainPage />,
 				children: [
-					{ path: "/", element: <HomePage /> },
-					{ path: "/aboutUs", element: <AboutPage /> },
+					{ path: "/", element: <AboutPage /> },
+					// { path: "/aboutUs", element: <AboutPage /> },
 					{ path: "/payment", element: <PaymentPage /> },
 					{ path: "/personal-and-sharing", element: <PersonalPage /> },
 					{ path: "/personal-info", element: <InfoPage /> },
