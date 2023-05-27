@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import ModalPage from "./components/ModalPage";
-import ErrorPage from "./pages/ErrorPage/ErrorPage";
+import ErrorPage from "./pages/errorPage/ErrorPage";
 import AboutPage from "./pages/aboutPage/AboutPage";
 import DataAndPrivacy from "./pages/dataAndPrivacyPage/DataAndPrivacy";
 import HomePage from "./pages/homePage/HomePage";
