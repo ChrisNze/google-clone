@@ -1,9 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import ModalPage from "./components/ModalPage";
-import ErrorPage from "./pages/errorPage/ErrorPage";
 import AboutPage from "./pages/aboutPage/AboutPage";
 import DataAndPrivacy from "./pages/dataAndPrivacyPage/DataAndPrivacy";
+import ErrorPage from "./pages/errorPage/ErrorPage";
 import HomePage from "./pages/homePage/HomePage";
 import MainPage from "./pages/mainPage";
 import PaymentPage from "./pages/paymentAndSubscriptionPage/PaymentPage";
@@ -18,7 +18,7 @@ const router = createBrowserRouter([
 		errorElement: <ErrorPage />,
 		children: [
 			{
-				path: "",
+				path: "/",
 				element: <MainPage />,
 				children: [
 					{ index: true, element: <HomePage /> },
