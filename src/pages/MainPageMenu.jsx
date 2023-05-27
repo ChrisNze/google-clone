@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import NavBar from "../components/NavBar";
 
-const MainPage = () => {
+const MainPageMenu = () => {
 	return (
 		<>
 			<div className="container-fluid mt-3 p-0">
@@ -18,4 +18,4 @@ const MainPage = () => {
 	);
 };
 
-export default MainPage;
+export default MainPageMenu;

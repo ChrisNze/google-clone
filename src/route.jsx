@@ -5,11 +5,11 @@ import AboutPage from "./pages/aboutPage/AboutPage";
 import DataAndPrivacy from "./pages/dataAndPrivacyPage/DataAndPrivacy";
 import ErrorPage from "./pages/errorPage/ErrorPage";
 // import HomePage from "./pages/homePage/HomePage";
-import MainPage from "./pages/mainPage";
 import PaymentPage from "./pages/paymentAndSubscriptionPage/PaymentPage";
 import PersonalPage from "./pages/personalAndSharingPage/PersonalPage";
 import InfoPage from "./pages/personalInfoPage/InfoPage";
 import SecurityPage from "./pages/securityPage/SecurityPage";
+import MainPageMenu from "./pages/MainPageMenu";
 
 const router = createBrowserRouter([
 	{
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
 		children: [
 			{
 				path: "/",
-				element: <MainPage />,
+				element: <MainPageMenu />,
 				children: [
 					{ path: "/", element: <AboutPage /> },
 					// { path: "/aboutUs", element: <AboutPage /> },
