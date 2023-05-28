@@ -5,7 +5,7 @@ const useZustand = create((set) => ({
 	popUp: true,
 	suggestionClosed: true,
 	smShow: false,
-	darkModeColorWhite: "rgba(255, 255, 255, 0.8)",
+	darkModeColorWhite: "#fff",
 	darkModeOff: () => set((state) => ({ darkMode: !state.darkMode })),
 	popUpOff: (popState) => set((state) => ({ popUp: popState })),
 	suggestionClosedOff: (popstate) => set((state) => ({ suggestionClosed: popstate })),

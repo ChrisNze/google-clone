@@ -44,7 +44,7 @@ const App = () => {
 							{searchOn ? (
 								<AiOutlineSearch className="searchIcon" title="Search Icon" style={{ color: !darkMode && "rgba(48, 47,47, 0.9)" }} />
 							) : (
-								<FiArrowLeft className="searchIcon" title="Arrow Icon" />
+								<FiArrowLeft className="searchIcon" title="Arrow Icon" style={{ color: !darkMode && "rgba(48, 47,47, 0.9)" }} />
 							)}
 							<input
 								type="text"

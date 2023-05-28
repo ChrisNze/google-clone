@@ -4,9 +4,10 @@ import { BsList } from "react-icons/bs";
 import NavBar from "./NavBar";
 import GoogleImg from "./GoogleImg";
 import useZustand from "../hooks/useZustand";
+import { MdClose } from "react-icons/md";
 
 const MainMenu = () => {
-	const { darkMode, darkModeOff, darkModeColorWhite } = useZustand();
+	const { darkMode, darkModeColorWhite } = useZustand();
 	const [show, setShow] = useState(false);
 
 	const handleClose = () => setShow(false);
@@ -15,21 +16,24 @@ const MainMenu = () => {
 	return (
 		<>
 			<button className="btn p-0" onClick={handleShow}>
-				<BsList className="icon" />
+				<BsList className="icon" style={{ color: !darkMode && darkModeColorWhite }} />
 			</button>
 
 			<Offcanvas show={show} onHide={handleClose} style={{ backgroundColor: !darkMode && "#000", color: !darkMode && darkModeColorWhite }}>
-				<Offcanvas.Header closeButton>
+				<Offcanvas.Header>
 					<Offcanvas.Title>
-						{/* <GoogleImg /> */}
+						{/* The div with onClick is to close the offCanvas when we click on any link*/}
 						<div onClick={handleClose}>
 							<GoogleImg />
 						</div>
 					</Offcanvas.Title>
+					<div>
+						<MdClose className="icon" onClick={handleClose} />
+					</div>
 				</Offcanvas.Header>
 				<Offcanvas.Body>
-					<div onClick={handleClose}>
-						<NavBar />
+					<div>
+						<NavBar close={handleClose} />
 					</div>
 				</Offcanvas.Body>
 				<button className="bg-primary text-light py-2" onClick={handleClose}>

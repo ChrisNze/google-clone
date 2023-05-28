@@ -5,7 +5,7 @@ import { FaUserCircle } from "react-icons/fa";
 import { MdLockOutline, MdOutlinePeople, MdPayment } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import useZustand from "../hooks/useZustand";
-const NavBar = () => {
+const NavBar = ({ close }) => {
 	const { darkMode } = useZustand();
 
 	const links = [
@@ -29,7 +29,8 @@ const NavBar = () => {
 						className={`${items.name === "About" && "d-xl-none"} ${
 							darkMode ? "nav-link" : "nav-link-darkMode"
 						} nav-link-more mb-3 mb-md-0 py-xl-3 ps-xl-5 d-flex`}
-						to={items.link}>
+						to={items.link}
+						onClick={close}>
 						<span className="me-4 d-none d-xl-flex align-items-center" style={{ fontSize: "2.5rem" }}>
 							{items.icon}
 						</span>
