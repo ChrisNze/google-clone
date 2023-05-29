@@ -6,8 +6,10 @@ import { BiHelpCircle } from "react-icons/bi";
 const SomethingElse = () => {
 	const { darkMode } = useZustand();
 	return (
-		<div className="tipContainer pt-4 ps-4 ps-sm-5" style={{ borderColor: !darkMode && "rgba(255, 255, 255, 0.3)" }}>
-			<h1 style={{ fontSize: "2.2rem", fontWeight: "400" }}>Looking for something else?</h1>
+		<div className="tipContainer pt-4 " style={{ borderColor: !darkMode && "rgba(255, 255, 255, 0.3)" }}>
+			<h1 style={{ fontSize: "2.2rem", fontWeight: "400" }} className="ps-4 ps-sm-5">
+				Looking for something else?
+			</h1>
 
 			<div className="mt-5 mb-2">
 				<Accordion flush>
