@@ -1,6 +1,7 @@
 import useZustand from "../hooks/useZustand";
 import Accordion from "react-bootstrap/Accordion";
 import { AiOutlineSearch } from "react-icons/ai";
+import { BsChatLeftText } from "react-icons/bs";
 import { BiHelpCircle } from "react-icons/bi";
 
 const SomethingElse = () => {
@@ -15,7 +16,7 @@ const SomethingElse = () => {
 				<Accordion flush>
 					<Accordion.Item eventKey="0">
 						<Accordion.Header>
-							<AiOutlineSearch className="icon" />
+							<AiOutlineSearch className="icon2" />
 							<span>Search Google Account</span>
 						</Accordion.Header>
 						<Accordion.Body>
@@ -27,7 +28,7 @@ const SomethingElse = () => {
 					</Accordion.Item>
 					<Accordion.Item eventKey="1">
 						<Accordion.Header>
-							<BiHelpCircle className="icon" />
+							<BiHelpCircle className="icon2" />
 							<span>See help options</span>
 						</Accordion.Header>
 						<Accordion.Body>
@@ -39,6 +40,7 @@ const SomethingElse = () => {
 					</Accordion.Item>
 					<Accordion.Item eventKey="2">
 						<Accordion.Header>
+							<BsChatLeftText className="icon2" />
 							<span>Send feedback</span>
 						</Accordion.Header>
 						<Accordion.Body>
