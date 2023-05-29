@@ -33,8 +33,6 @@
 	color: inherit !important;
 	font-size: 1.6rem !important;
 	padding: 0.5rem 2rem 0.5rem 1.5rem !important;
-	display: flex;
-	align-items: center;
 }
 
 .accordion-button:hover {
@@ -46,7 +44,6 @@
 }
 
 .icon2 {
-	border-radius: 0;
 	padding: 1rem;
 	width: 4.5rem;
 	height: 4.5rem;
