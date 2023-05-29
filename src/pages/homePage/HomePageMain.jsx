@@ -9,6 +9,7 @@ import TipsComponent from "../../components/TipsComponent";
 import WelcomeNote from "../../components/WelcomeNote";
 import useZustand from "../../hooks/useZustand";
 import useHomeVariables from "./useHomeVariables";
+import SomethingElse from "../../components/SomethingElse";
 
 const HomePageMain = () => {
 	const {
@@ -72,6 +73,11 @@ const HomePageMain = () => {
 								img={privacyCheckImg2}
 								marginTop={"mt-4"}
 							/>
+						</div>
+					</div>
+					<div className="row">
+						<div className="col-12">
+							<SomethingElse />
 						</div>
 					</div>
 				</div>

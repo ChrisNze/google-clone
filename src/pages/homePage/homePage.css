@@ -24,11 +24,25 @@
 }
 
 .tipContainer_sub:hover {
-	background-color: rgba(204, 189, 189, 0.1);
+	background-color: rgba(184, 214, 253, 0.2);
 }
-/* .tipImages {
-	width: 4rem;
-} */
+
+.accordion-button {
+	background-color: transparent !important;
+	box-shadow: none !important;
+	color: inherit !important;
+	font-size: 1.6rem !important;
+	padding: 0.5rem 2rem 0.5rem 0 !important;
+}
+
+.accordion-button:hover {
+	background-color: rgba(184, 214, 253, 0.2) !important;
+}
+
+.accordion-button:focus {
+	color: inherit !important;
+}
+
 @media (max-width: 576px) {
 	.tipImages {
 		max-width: 9rem;

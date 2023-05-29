@@ -83,7 +83,7 @@ const App = () => {
 				<MainMenu />
 			</div>
 
-			<div className="route">
+			<div className="route pb-4">
 				<Outlet />
 			</div>
 		</div>
