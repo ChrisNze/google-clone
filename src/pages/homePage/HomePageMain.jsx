@@ -1,5 +1,7 @@
 import privacyImg from "../../assets/privacyImg.png";
 import securityTipImg from "../../assets/securityTipImg.png";
+import privacyCheckImg from "../../assets/privacyCheckImg.png";
+import privacyCheckImg2 from "../../assets/privacyCheckImg2.png";
 import ModalPage from "../../components/ModalPage";
 import PopUp from "../../components/PopUp";
 import ProfilePix from "../../components/ProfilePix";
@@ -9,7 +11,23 @@ import useZustand from "../../hooks/useZustand";
 import useHomeVariables from "./useHomeVariables";
 
 const HomePageMain = () => {
-	const { message, info, imageSize, heading_1, heading_2, text, linkText, heading_1_2, heading_2_2, text_2, linkText_2 } = useHomeVariables();
+	const {
+		message,
+		info,
+		imageSize,
+		heading_1,
+		heading_2,
+		text,
+		linkText,
+		heading_1_2,
+		heading_2_2,
+		text_2,
+		linkText_2,
+		heading_1_3,
+		heading_2_3,
+		text_3,
+		linkText_3,
+	} = useHomeVariables();
 	const { smShow } = useZustand();
 	return (
 		<>
@@ -30,6 +48,30 @@ const HomePageMain = () => {
 						</div>
 						<div className="col-12 col-md-6 col-lg-6 col-xl-6">
 							<TipsComponent heading_1={heading_1_2} heading_2={heading_2_2} text={text_2} linkText={linkText_2} img={securityTipImg} />
+						</div>
+					</div>
+					<div className="row my-5 d-none d-sm-block">
+						<div className="col-12">
+							<TipsComponent
+								heading_1={heading_1_3}
+								heading_2={heading_2_3}
+								text={text_3}
+								linkText={linkText_3}
+								img={privacyCheckImg}
+								marginTop={"mt-4"}
+							/>
+						</div>
+					</div>
+					<div className="row my-5 d-block d-sm-none">
+						<div className="col-12">
+							<TipsComponent
+								heading_1={heading_1_3}
+								heading_2={heading_2_3}
+								text={text_3}
+								linkText={linkText_3}
+								img={privacyCheckImg2}
+								marginTop={"mt-4"}
+							/>
 						</div>
 					</div>
 				</div>
