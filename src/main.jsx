@@ -1,9 +1,10 @@
+import "animate.css/animate.min.css";
 import "bootstrap/dist/css/bootstrap.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
-import "./App.css";
 import "././pages/homePage/homePage.css";
+import "./App.css";
 import "./index.css";
 import router from "./route.jsx";
 

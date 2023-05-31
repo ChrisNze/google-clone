@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import { BiHelpCircle, BiToggleRight } from "react-icons/bi";
 import { FiArrowLeft } from "react-icons/fi";
@@ -7,8 +7,9 @@ import { MdToggleOff } from "react-icons/md";
 import { Outlet } from "react-router-dom";
 import GoogleImg from "./components/GoogleImg";
 import ProfilePix from "./components/ProfilePix";
-import MainMenu from "./components/MainMenu";
 import useZustand from "./hooks/useZustand";
+import { useState } from "react";
+import AnimationOnScroll from "react-animate-on-scroll";
 
 const App = () => {
 	const { darkMode, darkModeOff, darkModeColorWhite, search, setSearch, searchOn, setSearchOn } = useZustand();
@@ -26,9 +27,11 @@ const App = () => {
 		width: "4.5rem",
 		height: "4.5rem",
 	};
+
 	return (
 		<div style={containerStyle}>
-			<div className="container-fluid py-3">
+			{/* <AnimationOnScroll animateOut="animate_border"> */}
+			<div className="container-fluid py-3 mainContainer">
 				<div className="row d-flex px-sm-3">
 					{searchOn && (
 						<div className="col-2 d-flex align-items-center google" style={{ width: "fit-content" }}>
@@ -59,7 +62,6 @@ const App = () => {
 						<div className="iconContainer">
 							<AiOutlineSearch className="icon heading-icon d-block d-md-none" title="Search Icon" onClick={() => setSearchOn(!searchOn)} />
 						</div>
-
 						<div className="iconContainer">
 							{darkMode ? (
 								<BiToggleRight className="icon heading-icon" title="DarkMode" onClick={darkModeOff} />
@@ -77,8 +79,9 @@ const App = () => {
 					</div>
 				</div>
 			</div>
+			{/* </AnimationOnScroll> */}
 
-			<div className="route pb-5">
+			<div className="route pb-5 mt">
 				<Outlet />
 			</div>
 		</div>

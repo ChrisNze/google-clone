@@ -1,3 +1,32 @@
+.mainContainer {
+	overflow: hidden;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	background-color: rgba(255, 255, 255, 0.9);
+	/* filter: blur(0.9px); */
+	/* backdrop-filter: blur(10px); */
+	box-shadow: 0px 1px 6px rgba(48, 47, 47, 0.4);
+}
+.fixed_left {
+	position: fixed;
+	z-index: 1;
+	background-color: #fff;
+}
+
+.fixed_right {
+	position: absolute;
+	right: 0;
+}
+
+.animate_border {
+	box-shadow: 0px 1px 6px rgba(48, 47, 47, 0.4);
+}
+
+.mt {
+	margin-top: 10rem;
+}
 .gmailText {
 	text-decoration: none;
 	color: inherit;

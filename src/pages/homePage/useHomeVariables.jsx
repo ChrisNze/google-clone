@@ -31,6 +31,17 @@ const useHomeVariables = () => {
 		linkText_3: "Review suggestion (1)",
 	};
 
+	const somethingElse = {
+		heading: "Looking for something else?",
+		link1: "Search Google Account",
+		link2: "See help options",
+		link3: "Send feedback",
+		text1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in",
+		text2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in",
+		text3: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in",
+	};
+
+	const { heading, link1, link2, link3, text1, text2, text3 } = somethingElse;
 	const { heading_1, heading_2, text, linkText } = tipText;
 	const { heading_1_2, heading_2_2, text_2, linkText_2 } = tipText2;
 	const { heading_1_3, heading_2_3, text_3, linkText_3 } = tipText3;
@@ -51,6 +62,13 @@ const useHomeVariables = () => {
 		heading_2_3,
 		text_3,
 		linkText_3,
+		heading,
+		link1,
+		link2,
+		link3,
+		text1,
+		text2,
+		text3,
 	};
 };
 

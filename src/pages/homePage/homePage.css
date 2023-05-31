@@ -4,7 +4,7 @@
 }
 
 .suggestionClosedContainer {
-	position: absolute;
+	position: fixed;
 	bottom: 5%;
 	left: 50%;
 	transform: translateX(-50%);
