@@ -34,7 +34,7 @@ const NavBar = ({ close }) => {
 						<span className="me-4 d-none d-xl-flex align-items-center" style={{ fontSize: "2.5rem" }}>
 							{items.icon}
 						</span>
-						<span className="icon2 pb-2 pb-md-4 pb-xl-0">{items.name}</span>
+						<span className="pb-2 pb-md-4 pb-xl-0">{items.name}</span>
 					</NavLink>
 				))}
 			</ul>
