@@ -5,7 +5,7 @@ import { BsChatLeftText } from "react-icons/bs";
 import { BiHelpCircle } from "react-icons/bi";
 
 const SomethingElse = () => {
-	const { darkMode } = useZustand();
+	const { darkMode, darkModeColorWhite } = useZustand();
 	return (
 		<div className="tipContainer pt-4 " style={{ borderColor: !darkMode && "rgba(255, 255, 255, 0.3)" }}>
 			<h1 style={{ fontSize: "2.2rem", fontWeight: "400" }} className="ps-4 ps-sm-5">
@@ -14,7 +14,7 @@ const SomethingElse = () => {
 
 			<div className="mt-5 mb-2">
 				<Accordion flush>
-					<Accordion.Item eventKey="0">
+					<Accordion.Item eventKey="0" style={{ backgroundColor: !darkMode && "#000", color: !darkMode && darkModeColorWhite }}>
 						<Accordion.Header>
 							<AiOutlineSearch className="icon2" />
 							<span>Search Google Account</span>
@@ -26,7 +26,7 @@ const SomethingElse = () => {
 							sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</Accordion.Body>
 					</Accordion.Item>
-					<Accordion.Item eventKey="1">
+					<Accordion.Item eventKey="1" style={{ backgroundColor: !darkMode && "#000", color: !darkMode && darkModeColorWhite }}>
 						<Accordion.Header>
 							<BiHelpCircle className="icon2" />
 							<span>See help options</span>
@@ -38,7 +38,7 @@ const SomethingElse = () => {
 							sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</Accordion.Body>
 					</Accordion.Item>
-					<Accordion.Item eventKey="2">
+					<Accordion.Item eventKey="2" style={{ backgroundColor: !darkMode && "#000", color: !darkMode && darkModeColorWhite }}>
 						<Accordion.Header>
 							<BsChatLeftText className="icon2" />
 							<span>Send feedback</span>
