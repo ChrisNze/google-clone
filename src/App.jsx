@@ -11,9 +11,7 @@ import MainMenu from "./components/MainMenu";
 import useZustand from "./hooks/useZustand";
 
 const App = () => {
-	const [search, setSearch] = useState("");
-	const [searchOn, setSearchOn] = useState(true);
-	const { darkMode, darkModeOff, darkModeColorWhite } = useZustand();
+	const { darkMode, darkModeOff, darkModeColorWhite, search, setSearch, searchOn, setSearchOn } = useZustand();
 
 	const containerStyle = {
 		backgroundColor: darkMode ? "#fff" : "#000",
@@ -52,7 +50,7 @@ const App = () => {
 								style={{ padding: "1.2rem 0 1.2rem 4rem" }}
 								placeholder="Search Google Account"
 								value={search}
-								onChange={(e) => setSearch(e.target.value)}
+								onChange={setSearch}
 							/>
 						</form>
 					</div>
@@ -78,9 +76,6 @@ const App = () => {
 						<ProfilePix imageSize={imageSize} imageSize2="heading-img" />
 					</div>
 				</div>
-			</div>
-			<div className="p-0 d-md-none">
-				<MainMenu />
 			</div>
 
 			<div className="route pb-5">
