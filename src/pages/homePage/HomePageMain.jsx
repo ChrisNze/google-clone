@@ -10,7 +10,7 @@ import TipsComponent from "../../components/TipsComponent";
 import WelcomeNote from "../../components/WelcomeNote";
 import useZustand from "../../hooks/useZustand";
 import useHomeVariables from "./useHomeVariables";
-import AnimationOnScroll from "react-animate-on-scroll";
+// import AnimationOnScroll from "react-animate-on-scroll";
 
 const HomePageMain = () => {
 	const {
@@ -51,42 +51,42 @@ const HomePageMain = () => {
 				</div>
 
 				<div className="container-fluid">
-					<AnimationOnScroll animateIn="animate__bounceIn">
-						<div className="row g-5 justify-content-center">
-							<div className="col-12 col-md-6 col-lg-6 col-xl-6">
-								<TipsComponent heading_1={heading_1} heading_2={heading_2} text={text} linkText={linkText} img={privacyImg} />
-							</div>
-							<div className="col-12 col-md-6 col-lg-6 col-xl-6">
-								<TipsComponent heading_1={heading_1_2} heading_2={heading_2_2} text={text_2} linkText={linkText_2} img={securityTipImg} />
-							</div>
+					{/* <AnimationOnScroll animateIn="animate__bounceIn"> */}
+					<div className="row g-5 justify-content-center">
+						<div className="col-12 col-md-6 col-lg-6 col-xl-6">
+							<TipsComponent heading_1={heading_1} heading_2={heading_2} text={text} linkText={linkText} img={privacyImg} />
 						</div>
-					</AnimationOnScroll>
-					<AnimationOnScroll animateIn="animate__bounceIn" animateOut="animate__bounceIn">
-						<div className="row my-5 d-none d-sm-block">
-							<div className="col-12">
-								<TipsComponent
-									heading_1={heading_1_3}
-									heading_2={heading_2_3}
-									text={text_3}
-									linkText={linkText_3}
-									img={privacyCheckImg}
-									marginTop={"mt-4"}
-								/>
-							</div>
+						<div className="col-12 col-md-6 col-lg-6 col-xl-6">
+							<TipsComponent heading_1={heading_1_2} heading_2={heading_2_2} text={text_2} linkText={linkText_2} img={securityTipImg} />
 						</div>
-						<div className="row my-5 d-block d-sm-none">
-							<div className="col-12">
-								<TipsComponent
-									heading_1={heading_1_3}
-									heading_2={heading_2_3}
-									text={text_3}
-									linkText={linkText_3}
-									img={privacyCheckImg2}
-									marginTop={"mt-4"}
-								/>
-							</div>
+					</div>
+					{/* </AnimationOnScroll> */}
+					{/* <AnimationOnScroll animateIn="animate__bounceIn" animateOut="animate__bounceIn"> */}
+					<div className="row my-5 d-none d-sm-block">
+						<div className="col-12">
+							<TipsComponent
+								heading_1={heading_1_3}
+								heading_2={heading_2_3}
+								text={text_3}
+								linkText={linkText_3}
+								img={privacyCheckImg}
+								marginTop={"mt-4"}
+							/>
 						</div>
-					</AnimationOnScroll>
+					</div>
+					<div className="row my-5 d-block d-sm-none">
+						<div className="col-12">
+							<TipsComponent
+								heading_1={heading_1_3}
+								heading_2={heading_2_3}
+								text={text_3}
+								linkText={linkText_3}
+								img={privacyCheckImg2}
+								marginTop={"mt-4"}
+							/>
+						</div>
+					</div>
+					{/* </AnimationOnScroll> */}
 
 					<div className="row">
 						<div className="col-12">
