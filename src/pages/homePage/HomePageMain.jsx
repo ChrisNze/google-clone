@@ -51,7 +51,7 @@ const HomePageMain = () => {
 				</div>
 
 				<div className="container-fluid">
-					<AnimationOnScroll animateIn="animate__bounceIn" an>
+					<AnimationOnScroll animateIn="animate__bounceIn">
 						<div className="row g-5 justify-content-center">
 							<div className="col-12 col-md-6 col-lg-6 col-xl-6">
 								<TipsComponent heading_1={heading_1} heading_2={heading_2} text={text} linkText={linkText} img={privacyImg} />
