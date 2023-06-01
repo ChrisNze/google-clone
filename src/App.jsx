@@ -8,8 +8,7 @@ import { Outlet } from "react-router-dom";
 import GoogleImg from "./components/GoogleImg";
 import ProfilePix from "./components/ProfilePix";
 import useZustand from "./hooks/useZustand";
-import { useState } from "react";
-import AnimationOnScroll from "react-animate-on-scroll";
+// import AnimationOnScroll from "react-animate-on-scroll";
 
 const App = () => {
 	const { darkMode, darkModeOff, darkModeColorWhite, search, setSearch, searchOn, setSearchOn } = useZustand();
